@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>متجر عقربا - Aqraba Store</title>
+    
+    <!-- Meta tags for security and SEO -->
+    <meta name="description" content="متجر عقربا الإلكتروني - وجهتك الأولى للتسوق في فلسطين">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: #f8fafc;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .offer-badge {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      }
+      /* إخفاء شريط التمرير مع الحفاظ على الوظيفة */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="overflow-x-hidden select-none md:select-text">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
